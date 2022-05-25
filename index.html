@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/jpg" sizes="128x128" href="favicon.jpg">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/gameStyle.css">
   <title>Лабиринт забытых мечтаний</title>
 </head>
 <body class="page__body">
@@ -24,7 +25,7 @@
   <main class="page__main main">
     <h2 class="visually-hidden">Игровое поле.</h2>
     <button class="main__play button">Играть!</button>
-    <ul class="main__area area hidden"></ul>
+    <ul class="main__area area clear-list hidden"></ul>
     <fieldset class="person__info hidden">
       <input type="hidden" name="hero-name" id="#hero-name">
       <input type="hidden" name="hero-img" id="#hero-img">
@@ -39,7 +40,9 @@
   </footer>
 
   <template id="area-element">
-    <li class="area__element"></li>
+    <li class="area__element">
+      <div class="box"></div>
+    </li>
   </template>
 
   <script type="module" src="js/main.js"></script>
