@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/jpg" sizes="128x128" href="favicon.jpg">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Лабиринт забытых мечтаний</title>
+</head>
+<body class="page__body">
+  <h1 class="visually-hidden">Онлайн игра "Лабиринт забытых мечтаний".</h1>
+
+  <header class="page__header header">
+    <h2 class="visually-hidden">Информация и функционал.</h2>
+    <img class="header__img" src="img/load_failed.gif" width="64" height="64" alt="Главный герой." tabindex="0">
+    <button class="button">Инвентарь</button>
+    <button class="button">Навыки</button>
+    <button class="button">Квесты</button>
+    <button class="button">Бестиарий</button>
+    <button class="button">Сохранения</button>
+  </header>
+
+  <main class="page__main main">
+    <h2 class="visually-hidden">Игровое поле.</h2>
+    <button class="main__play button">Играть!</button>
+    <ul class="main__area area hidden"></ul>
+    <fieldset class="person__info hidden">
+      <input type="hidden" name="hero-name" id="#hero-name">
+      <input type="hidden" name="hero-img" id="#hero-img">
+      <input type="hidden" name="hero-stats" id="#hero-stats">
+      <input type="hidden" name="hero-invent" id="#hero-invent">
+      <input type="hidden" name="hero-bestiar" id="#hero-bestiar">
+    </fieldset>
+  </main>
+
+  <footer class="page__footer footer">
+    <h2 class="footer__title">COZY ROOM studio<sup>©</sup></h2>
+  </footer>
+
+  <template id="area-element">
+    <li class="area__element"></li>
+  </template>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "dependencies": {
+    "browser-sync": "^2.27.9"
+  },
+  "scripts": {
+    "start": "browser-sync start --server --no-ui --files \"js/**/*.js\""
+  }
+}
