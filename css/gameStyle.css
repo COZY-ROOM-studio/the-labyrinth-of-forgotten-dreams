@@ -19,13 +19,45 @@
 
 .area__element {
   display: block;
-  background-color: rgba(0, 0, 255, 0.2);
-  outline: 1px solid rgba(255, 255, 255, 0.3);
+  background-image: url("../img/trava_1.jpg");
+  background-size: 64px;
+  /* background-color: rgba(0, 0, 255, 0.2); */
+  /* outline: 1px solid rgba(255, 255, 255, 0.3); */
+}
+
+.area__element.second {
+  background-image: url("../img/trava_2.jpg");
+}
+
+.area__element.sea-pl {
+  background-image: url("../img/sea.gif");
+}
+
+.area__element img {
+  width: 64px;
+  height: 64PX;
+  transform: translateY(-20px);
+  -webkit-transform: translateY(-20px);
+  -moz-transform: translateY(-20px);
+  -ms-transform: translateY(-20px);
+  -o-transform: translateY(-20px);
+  transition: transform 0.3s;
+  -webkit-transition: transform 0.3s;
+  -moz-transition: transform 0.3s;
+  -ms-transition: transform 0.3s;
+  -o-transition: transform 0.3s;
+  z-index: 1;
 }
 
 @media (max-width: 767px) {
   .main__area {
     grid-template-columns: repeat(100, 32px);
     grid-auto-rows: 32px;
+  }
+
+  .area__element {
+    display: block;
+    background-image: url("../img/pl_1.jpg");
+    background-size: 32px;
   }
 }
